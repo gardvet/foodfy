@@ -1,0 +1,119 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    color: #111111; 
+}
+/*==menu==*/
+header {
+    width: 940px; /*largura igual a do conteúdo abaixo o main*/
+    margin: 0 auto; /*centralizar*/
+}
+nav .menu a {
+    position: relative; /*propriedade usada para mover o menu*/
+    top: 15px; /*mover 15 de distancia do topo*/
+    left: 220px; /*mover 220 de distancia da esquerda da página*/
+    text-decoration: none; /*retirar o sublinhado do link*/
+    margin-left: 30px; /*separar os links 30 de distancia */
+    color: #111111; /*mudar a cor da fonte*/
+    line-height: 19px; /*altura da linha do texto*/
+    
+}
+.logo {
+    position: relative; /*movimentar a imagem em relação ao menu*/
+    bottom: 5px; /*propriedade do relative*/
+    left: 15px; /*propriedade do relative*/
+}
+/*===cards====*/
+.painel h2 {
+    margin: 50px 240px;
+}
+
+.receita {
+    max-width: 940px; /*largura máxima*/
+    margin: 0 auto; /*centraliza*/
+    display: grid; /*cria uma tabela*/
+    grid-template-columns: 1fr 1fr 1fr; /*tres colunas proporcionais*/
+    
+}
+.card p {
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 16px;
+    color: #777777;
+}
+.card img {
+    width: 300px; /*largura da imagem*/
+    height: 140px; /*altura da imagem*/
+    border-radius: 15px; /*arredondar a borda*/
+    margin: 10px; /*aplicar 10px em todos os lados*/
+}
+/*===Modal====*/
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.7); /*fundo para o modal*/
+    width: 100%; /*largura*/
+    height: 100%; /*Altura */
+    position: fixed; /*posição do modal*/
+    top: 0; /*quando aplicar o top a imagem irá aparecer*/
+    opacity: 0; /*deixar transparente o modal*/
+    visibility: hidden; /*esconder o modal*/
+}
+.modal {
+    background: #ffffff;
+    width: 560px;
+    height: 313px;
+    margin: 355px auto;
+    position: relative; /*deixa o absoluto em relação a caixa*/
+}
+.modal .close-modal {
+    font-size: 16px;
+    color: #999999;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    
+    cursor: pointer;
+}
+/*-=-Modal Active-=-*/
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible ;
+}
+.modal-content img {
+    width: 520px;
+    height: 140px;
+    position: absolute;
+    margin: 20px 20px 0 20px;
+}
+.modal-content div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.modal-content h3 {
+    font-size: 24px;
+    color: #111111;
+    position: absolute;
+    margin: 190px auto;
+}
+.modal-content p {
+    font-size: 17px;
+    color: #777777;
+    position: absolute;
+    margin: 215px auto;
+}
+/*footer*/
+footer {
+    background: #eeeeee;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+    margin-top: 20px;
+    padding: 15px;   
+}
